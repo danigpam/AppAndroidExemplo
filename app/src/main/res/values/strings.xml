@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppAndroidExemplo</string>
+    <string name="link_login">Já tem uma conta? Clique aqui para entrar!</string>
+    <string name="status_contador">O contador está em</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+    <string name="botao_cadastro">Crie sua conta!</string>
+    <string name="botao_contador">Contador!</string>
+    <string name="botao_login">Login</string>
+    <string name="campo_email_hint">Email</string>
+    <string name="campo_senha_hint">Senha</string>
+</resources>

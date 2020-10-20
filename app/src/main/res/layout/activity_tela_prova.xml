@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaProva">
+
+    <EditText
+        android:id="@+id/campoTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Digite um texto aqui"
+        app:layout_constraintBottom_toTopOf="@+id/botaoCopiaTexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botaoCopiaTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="botaoClique"
+        android:text="Clique!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoTexto" />
+</androidx.constraintlayout.widget.ConstraintLayout>
