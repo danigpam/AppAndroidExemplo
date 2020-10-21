@@ -1,6 +1,12 @@
 # AppAndroidExemplo
 Aplicação desenvolvida junto aos alunos da Universidade de Mogi das Cruzes (UMC) na disciplina de IOD ao longo do semestre.
 
+Tecnologias utilizadas:
+- Java
+- Arquitetura MVVM
+- SQLite com Room
+- Retrofit
+
 Conteúdo das aulas:
 - Introdução ao desenvolvimento de aplicativos mobile
 - Design e UX em aplicativos móveis
