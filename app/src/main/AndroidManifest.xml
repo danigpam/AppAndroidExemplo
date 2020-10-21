@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TelaProva"></activity>
-        <activity android:name=".TelaCadastro" />
-        <activity android:name=".TelaContador">
+        <activity android:name=".activity.TelaProva"></activity>
+        <activity android:name=".activity.TelaCadastro" />
+        <activity android:name=".activity.TelaContador">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.APP_CALCULATOR" />
             </intent-filter>
         </activity>
-        <activity android:name=".TelaLogin" />
-        <activity android:name=".TelaPrincipal">
+        <activity android:name=".activity.TelaLogin" />
+        <activity android:name=".activity.TelaPrincipal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

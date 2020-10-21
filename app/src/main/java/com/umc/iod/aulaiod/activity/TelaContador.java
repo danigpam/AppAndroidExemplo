@@ -1,4 +1,4 @@
-package com.umc.iod.aulaiod;
+package com.umc.iod.aulaiod.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

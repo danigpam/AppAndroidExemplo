@@ -1,4 +1,4 @@
-package com.umc.iod.aulaiod;
+package com.umc.iod.aulaiod.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import com.umc.iod.aulaiod.R;
 
 public class TelaPrincipal extends AppCompatActivity {
 
