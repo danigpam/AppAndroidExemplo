@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.TelaProva"></activity>
+        <activity android:name=".activity.TelaFeed"></activity>
+        <activity android:name=".activity.TelaProva" />
         <activity android:name=".activity.TelaCadastro" />
         <activity android:name=".activity.TelaContador">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.APP_CALCULATOR" />
             </intent-filter>
@@ -22,8 +24,10 @@
         <activity android:name=".activity.TelaPrincipal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
