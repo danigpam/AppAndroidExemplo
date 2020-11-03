@@ -42,7 +42,7 @@ public class TelaCadastro extends AppCompatActivity {
         String email = campoEmail.getText().toString();
         String senha = campoSenha.getText().toString();
 
-        Usuario usuario = new Usuario(email, email);
+        Usuario usuario = new Usuario(email, senha);
         viewModel.validarCadastro(usuario);
         viewModel.cadastrar(usuario);
     }
@@ -72,6 +72,7 @@ public class TelaCadastro extends AppCompatActivity {
 
                 Intent intencao = new Intent();
                 intencao.setClass(getApplicationContext(), TelaFeed.class);
+                intencao.putExtra("usuarioId", usuario.getId());
                 startActivity(intencao);
             }
         }
