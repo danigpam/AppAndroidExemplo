@@ -8,5 +8,8 @@
     <string name="botao_login">Login</string>
     <string name="campo_email_hint">Email</string>
     <string name="campo_senha_hint">Senha</string>
+    <string name="titulo_feed">Seu feed de postagens</string>
     <string name="erro_email_indisponivel">Esse email está indisponível!</string>
+    <string name="erro_credenciais_incorretas">Credenciais incorretas!</string>
+    <string name="aviso_email_nao_validado">Seu email ainda não foi validado. Verifique sua caixa de entrada do email pelo link de validação.</string>
 </resources>
