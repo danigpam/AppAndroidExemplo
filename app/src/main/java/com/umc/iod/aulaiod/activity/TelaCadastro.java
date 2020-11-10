@@ -59,7 +59,7 @@ public class TelaCadastro extends AppCompatActivity {
                 mensagemErro.setVisibility(TextView.VISIBLE);
             } else {
                 mensagemErro.setText("");
-                mensagemErro.setVisibility(TextView.VISIBLE);
+                mensagemErro.setVisibility(TextView.INVISIBLE);
             }
         }
     };

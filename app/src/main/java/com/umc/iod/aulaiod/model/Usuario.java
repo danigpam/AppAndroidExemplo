@@ -12,7 +12,7 @@ public class Usuario {
     private long id;
     private String email;
     private String senha;
-
+    private boolean sincronizado;
 
     public Usuario() {
     }
@@ -45,5 +45,13 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public boolean isSincronizado() {
+        return sincronizado;
+    }
+
+    public void setSincronizado(boolean sincronizado) {
+        this.sincronizado = sincronizado;
     }
 }

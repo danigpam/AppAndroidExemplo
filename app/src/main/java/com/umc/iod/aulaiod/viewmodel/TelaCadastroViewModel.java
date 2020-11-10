@@ -3,7 +3,6 @@ package com.umc.iod.aulaiod.viewmodel;
 import android.app.Application;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -27,6 +26,7 @@ public class TelaCadastroViewModel extends AndroidViewModel {
 
     public void validarCadastro(Usuario usuario) {
         Log.d(getClass().getName(), "Dentro do validarCadastro ");
+
         ThreadManager.getExecutor().execute(() -> {
             if (usuarioRepository.verificaEmailExistente(usuario.getEmail())) {
                 mensagemErroId.postValue(R.string.erro_email_indisponivel);
