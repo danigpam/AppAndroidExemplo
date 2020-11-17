@@ -70,8 +70,10 @@ public class TelaFeed extends AppCompatActivity {
         @Override
         public void onChanged(List<Postagem> listaPosts) {
             if (listaPosts != null) {
+                LinearLayout layout = findViewById(R.id.postsLinearLayout);
+                layout.removeAllViews();
+
                 for (Postagem postagem : listaPosts) {
-                    LinearLayout layout = findViewById(R.id.postsLinearLayout);
 
                     TextView textViewPost = new TextView(getApplicationContext());
                     textViewPost.setText(postagem.getTitulo() + "\r\n" + postagem.getTexto() + "\r\n\r\n");
