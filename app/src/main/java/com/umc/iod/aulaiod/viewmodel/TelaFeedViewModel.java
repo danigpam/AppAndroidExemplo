@@ -25,7 +25,7 @@ public class TelaFeedViewModel extends AndroidViewModel {
     public TelaFeedViewModel(@NonNull Application application) {
         super(application);
         usuarioRepository = new UsuarioRepository(application);
-        postagemRepository = new PostagemRepository();
+        postagemRepository = new PostagemRepository(application);
     }
 
     public LiveData<List<Postagem>> getPosts() {

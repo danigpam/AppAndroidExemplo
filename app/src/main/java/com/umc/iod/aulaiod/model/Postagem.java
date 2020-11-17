@@ -1,8 +1,12 @@
 package com.umc.iod.aulaiod.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+@Entity
 public class Postagem {
 
+    @PrimaryKey
     private long id;
     private String data;
     private String titulo;

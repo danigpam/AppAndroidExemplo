@@ -69,6 +69,7 @@ public class TelaFeed extends AppCompatActivity {
     private Observer<List<Postagem>> observadorPosts = new Observer<List<Postagem>>() {
         @Override
         public void onChanged(List<Postagem> listaPosts) {
+            Log.i(getClass().getName(), "Dentro do observadorPosts, atualizou o live data");
             if (listaPosts != null) {
                 LinearLayout layout = findViewById(R.id.postsLinearLayout);
                 layout.removeAllViews();
