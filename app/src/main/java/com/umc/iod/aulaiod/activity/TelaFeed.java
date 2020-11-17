@@ -8,11 +8,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.umc.iod.aulaiod.R;
+import com.umc.iod.aulaiod.model.Postagem;
 import com.umc.iod.aulaiod.model.Usuario;
 import com.umc.iod.aulaiod.viewmodel.TelaFeedViewModel;
+
+import java.util.List;
 
 public class TelaFeed extends AppCompatActivity {
 
@@ -31,6 +35,7 @@ public class TelaFeed extends AppCompatActivity {
 
         viewModel.carregarUsuarioLogado(id);
         viewModel.getUsuarioLogado().observe(this, observadorUsuarioLogado);
+        viewModel.getPosts().observe(this, observadorPosts);
     }
 
     public void avisoEmailNaoValidadoClick(View view) {
@@ -56,6 +61,22 @@ public class TelaFeed extends AppCompatActivity {
                     Log.i(getClass().getName(), "Dentro do observadorUsuarioLogado - nao está sincronizado");
                     TextView aviso = findViewById(R.id.avisoEmailNaoValidado);
                     aviso.setVisibility(TextView.VISIBLE);
+                }
+            }
+        }
+    };
+
+    private Observer<List<Postagem>> observadorPosts = new Observer<List<Postagem>>() {
+        @Override
+        public void onChanged(List<Postagem> listaPosts) {
+            if (listaPosts != null) {
+                for (Postagem postagem : listaPosts) {
+                    LinearLayout layout = findViewById(R.id.postsLinearLayout);
+
+                    TextView textViewPost = new TextView(getApplicationContext());
+                    textViewPost.setText(postagem.getTitulo() + "\r\n" + postagem.getTexto() + "\r\n\r\n");
+
+                    layout.addView(textViewPost);
                 }
             }
         }
