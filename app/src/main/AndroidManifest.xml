@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.TelaFeed"></activity>
+        <service
+            android:name=".service.NotificacaoUsuarioService"
+            android:exported="false"></service>
+
+        <activity android:name=".activity.TelaFeed" />
         <activity android:name=".activity.TelaProva" />
         <activity android:name=".activity.TelaCadastro" />
         <activity android:name=".activity.TelaContador">

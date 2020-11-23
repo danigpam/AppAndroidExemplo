@@ -17,4 +17,7 @@ public class RetrofitConfig {
     public PostagemService getPostagemService() {
         return retrofit.create(PostagemService.class);
     }
+    public NotificacaoService getNotificacaoService() {
+        return retrofit.create(NotificacaoService.class);
+    }
 }
